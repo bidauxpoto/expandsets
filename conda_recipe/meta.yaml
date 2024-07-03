@@ -1,0 +1,25 @@
+{% set name = "Package Name" %}
+{% set version = "1.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source: 
+  path: ../src
+
+requirements:
+  host:
+    - perl
+    - python>=3
+  run:
+    - perl
+    - python>=3
+
+about:
+  home: URL to Github
+  summary: Something something
+
+#Simple python packages can work as simple noarch
+#build:
+#    noarch: python
