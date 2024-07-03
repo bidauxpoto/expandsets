@@ -1,4 +1,4 @@
-{% set name = "Package Name" %}
+{% set name = "expandsets" %}
 {% set version = "1.0" %}
 
 package:
@@ -10,16 +10,10 @@ source:
 
 requirements:
   host:
-    - perl
     - python>=3
   run:
-    - perl
     - python>=3
 
 about:
-  home: URL to Github
-  summary: Something something
-
-#Simple python packages can work as simple noarch
-#build:
-#    noarch: python
+  home: https://github.com/bidauxpoto/expandsets.git
+  summary: 
